@@ -5,6 +5,8 @@ import GridLayout from './components/GridLayout';
 import Navbar from './components/Navbar';
 import Dates from './components/Dates';
 import MapPaths from './components/MapPaths';
+import ErrorsPanel from './components/ErrorsPanel';
+import CleaningStats from './components/CleaningStats';
 
 function App() {
   const [startDate, setStartDate] = useState("");
@@ -12,6 +14,8 @@ function App() {
 
   const startMax = useMemo(() => (endDate || undefined), [endDate]);
   const endMin = useMemo(() => (startDate || undefined), [startDate]);
+  
+  const selectedShop = 'shop_1';
 
   return (
     <>
@@ -36,8 +40,8 @@ function App() {
       <div className="p-[50px]">
         <GridLayout
           bigSquare={<div>Map</div>}
-          small1={<div>Errors</div>}
-          small2={<div>Cleaning Stats</div>}
+          small1={<ErrorsPanel shopId={selectedShop} />}
+          small2={<CleaningStats shopId={selectedShop} />}
           small3={<div>Other Stats</div>}
           rect2x1={<div>Other Stats</div>}
           tileClassName="bg-accent/40"
