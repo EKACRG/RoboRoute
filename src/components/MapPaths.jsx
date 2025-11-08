@@ -28,7 +28,7 @@ function generateRobotPath(bounds, numPoints = 30, step = 40) {
 }
 
 function MapPaths() {
-  const { map, shop } = useAppStore()
+  const { map, shop } = useAppStore();
 
   const [mapImage] = useImage(shopPaths[map].url);
 
@@ -125,7 +125,7 @@ function MapPaths() {
           <Group x={0} y={210}>
             <Image image={mapImage} />
 
-            <Rect
+            {/* <Rect
               x={bounds.x}
               y={bounds.y}
               width={bounds.width}
@@ -134,7 +134,7 @@ function MapPaths() {
               strokeWidth={1}
               dash={[10, 5]}
               listening={false}
-            />
+            /> */}
 
 
             {/* Heatmap */}

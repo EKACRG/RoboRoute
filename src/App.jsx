@@ -1,25 +1,31 @@
 import './styles.css';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import GridLayout from './components/GridLayout';
 import Navbar from './components/Navbar';
 import Dates from './components/Dates';
 import MapPaths from './components/MapPaths';
 import ErrorsPanel from './components/ErrorsPanel';
 import CleaningStats from './components/CleaningStats';
+import { useAppStore } from './lib/shopsStore';
 
 function App() {
+  const { shop } = useAppStore();
+
+  const [selectedShop, setSelectedShop] = useState(shop || 'shop_1');
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState("");
 
   const startMax = useMemo(() => (endDate || undefined), [endDate]);
   const endMin = useMemo(() => (startDate || undefined), [startDate]);
-  
-  const selectedShop = 'shop_1';
+
+  useEffect(() => {
+    setSelectedShop(shop || 'shop_1');
+  }, [shop]);
 
   return (
     <>
-      <Navbar logo="NPT Telmekom Challenge" menu1Label="Shop" menu2Label="Robot" />
+      <Navbar logo="RoboRoute" menu1Label="Shop" menu2Label="Robot" />
       <div className="flex flex-wrap items-center gap-4 md:flex-row p-[50px] pt-[120px] pb-[0px]">
         <Dates
           label="Start date"
