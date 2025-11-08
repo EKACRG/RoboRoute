@@ -48,8 +48,6 @@ function App() {
           bigSquare={<div><MapPaths /></div>}
           small1={<ErrorsPanel shopId={selectedShop} />}
           small2={<CleaningStats shopId={selectedShop} />}
-          small3={<div>Other Stats</div>}
-          rect2x1={<div>Other Stats</div>}
           tileClassName="bg-accent/40"
         />
       </div>

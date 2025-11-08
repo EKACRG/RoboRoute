@@ -22,12 +22,6 @@ function GridLayout({
       <div className={`col-span-2 row-span-1 ${baseTile} ${tileClassName}`}>
         {small2}
       </div>
-      <div className={`col-span-1 row-span-1 min-h-[300px] ${baseTile} ${tileClassName}`}>
-        {small3}
-      </div>
-      <div className={`col-span-3 row-span-1 ${baseTile} ${tileClassName}`}>
-        {rect2x1}
-      </div>
     </div>
   );
 }

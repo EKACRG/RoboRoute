@@ -93,7 +93,7 @@ function MapPaths() {
   };
 
   return (
-    <div className="App" style={{ textAlign: "center" }}>
+    <div className="App pt-[7px] font-semibold" style={{ textAlign: "center" }}>
       <div style={{ marginBottom: "10px" }}>
         <button
           onClick={() => setShowHeatmap((prev) => !prev)}
@@ -122,7 +122,7 @@ function MapPaths() {
 
       <Stage className="stage" width={1200} height={800}>
         <Layer draggable={true}>
-          <Group x={0} y={210}>
+          <Group x={400} y={4}>
             <Image image={mapImage} />
 
             {/* <Rect

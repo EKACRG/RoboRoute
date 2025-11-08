@@ -35,7 +35,7 @@ function Navbar({ logo = "Logo", className = "" }) {
 
   return (
     <nav className={`w-full ${className}`}>
-      <div className="fixed left-0 right-0 top-8 z-40 px-13">
+      <div className="fixed left-0 right-0 top-8 z-40 px-11">
         <div className="mx-auto max-w-8xl rounded-xl border bg-background/80 backdrop-blur shadow-md px-4 py-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
