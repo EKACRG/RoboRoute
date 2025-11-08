@@ -20,12 +20,12 @@ function Navbar({ logo = "Logo", className = "" }) {
 
   const shopsByMap = {
     map_1: [
-      { key: "shop_1", label: "Shop 1" },
-      { key: "shop_2", label: "Shop 2" },
+      { key: "shop_1", label: "Shop 1A" },
+      { key: "shop_2", label: "Shop 1B" },
     ],
     map_2: [
-      { key: "shop_3", label: "Shop 1" },
-      { key: "shop_4", label: "Shop 2" },
+      { key: "shop_3", label: "Shop 2A" },
+      { key: "shop_4", label: "Shop 2B" },
     ],
   }
 

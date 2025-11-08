@@ -21,7 +21,6 @@ export default function ErrorsPanel({ shopId }) {
     <div className="w-full h-full overflow-auto p-4 text-sm">
       <div className="flex items-baseline justify-between">
         <h3 className="text-base font-semibold">Errors</h3>
-        <span className="text-muted-foreground text-xs">Shop: {shopId}</span>
       </div>
       {sorted.length === 0 ? (
         <p className="mt-3 text-muted-foreground">No errors recorded.</p>

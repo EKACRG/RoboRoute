@@ -33,7 +33,7 @@ function MapPaths() {
   const [mapImage] = useImage(shopPaths[map].url);
 
   const [robotPaths, setRobotPaths] = useState([]);
-  const [showHeatmap, setShowHeatmap] = useState(true);
+  const [showHeatmap, setShowHeatmap] = useState(false);
   const [showPaths, setShowPaths] = useState(true);
 
   const bounds = useMemo(() => {
@@ -168,7 +168,7 @@ function MapPaths() {
               ))}
 
             {/* Bounds opzionale */}
-            <Rect
+            {/* <Rect
               x={bounds.x}
               y={bounds.y}
               width={bounds.width}
@@ -177,7 +177,7 @@ function MapPaths() {
               strokeWidth={1}
               dash={[10, 5]}
               listening={false}
-            />
+            /> */}
           </Group>
         </Layer>
       </Stage>

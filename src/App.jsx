@@ -26,7 +26,7 @@ function App() {
   return (
     <>
       <Navbar logo="RoboRoute" menu1Label="Shop" menu2Label="Robot" />
-      <div className="flex flex-wrap items-center gap-4 md:flex-row p-[50px] pt-[120px] pb-[0px]">
+      {/* <div className="flex flex-wrap items-center gap-4 md:flex-row p-[50px] pt-[120px] pb-[0px]">
         <Dates
           label="Start date"
           name="start-date"
@@ -41,9 +41,9 @@ function App() {
           onChange={setEndDate}
           min={endMin}
         />
-      </div>
+      </div> */}
       
-      <div className="p-[50px]">
+      <div className="p-[50px] pt-[130px]">
         <GridLayout
           bigSquare={<div><MapPaths /></div>}
           small1={<ErrorsPanel shopId={selectedShop} />}
