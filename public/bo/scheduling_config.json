@@ -1,0 +1,18 @@
+{
+   "back_pose": [],
+   "delete_wait_take": 0,
+   "deliver_radius": -1,
+   "deliver_start_pose": [
+      0.0,
+      0.0,
+      0.0
+   ],
+   "dual_carriageway_width": 1.59,
+   "goto_pose": [],
+   "moving_robot_dist_threshold": 2,
+   "parking_regions": [],
+   "use_change_park": 0,
+   "use_parking_find": 0,
+   "parking_pose": [],
+   "taking_pose": []
+}

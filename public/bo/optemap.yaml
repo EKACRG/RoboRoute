@@ -1,0 +1,9 @@
+image: optemap.pgm
+resolution: 0.050000
+origin: [-20.600000, -10.850000, 0.0]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+score: 0.303012
+use: true
+traj_md5: a4a1abbe3da44494
