@@ -15,7 +15,8 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-wrap items-center gap-4 md:flex-row p-[50px] pb-[0px]">
+      <Navbar logo="NPT Telmekom Challenge" menu1Label="Shop" menu2Label="Robot" />
+      <div className="flex flex-wrap items-center gap-4 md:flex-row p-[50px] pt-[120px] pb-[0px]">
         <Dates
           label="Start date"
           name="start-date"
