@@ -1,0 +1,85 @@
+{
+    "shop_1": {
+        "errors": [
+            {
+                "error_name": "LostBattery",
+                "error_date": "2025-10-15",
+                "robot_name": "Robot_A1"
+            },
+            {
+                "error_name": "LostLocalization",
+                "error_date": "2025-10-28",
+                "robot_name": "Robot_A2"
+            },
+            {
+                "error_name": "LostCamera",
+                "error_date": "2025-11-02",
+                "robot_name": "Robot_A3"
+            }
+        ],
+        "cleaning": {
+            "mean_task_count": 2.8,
+            "mean_covered_area": 95.4,
+            "mean_duration": 0.32,
+            "mean_power_consumption": 0.06,
+            "mean_water_consumption": 0
+        }
+    },
+    "shop_2": {
+        "errors": [
+            {
+                "error_name": "WheelErrorLeft",
+                "error_date": "2025-10-20",
+                "robot_name": "Robot_B1"
+            }
+        ],
+        "cleaning": {
+            "mean_task_count": 3.5,
+            "mean_covered_area": 125.8,
+            "mean_duration": 0.45,
+            "mean_power_consumption": 0.08,
+            "mean_water_consumption": 0
+        }
+    },
+    "shop_3": {
+        "errors": [
+            {
+                "error_name": "LostIMU",
+                "error_date": "2025-10-12",
+                "robot_name": "Robot_C2"
+            },
+            {
+                "error_name": "LostLidar",
+                "error_date": "2025-10-25",
+                "robot_name": "Robot_C1"
+            },
+            {
+                "error_name": "LostRGBD",
+                "error_date": "2025-11-01",
+                "robot_name": "Robot_C3"
+            },
+            {
+                "error_name": "WheelErrorRight",
+                "error_date": "2025-11-05",
+                "robot_name": "Robot_C2"
+            }
+        ],
+        "cleaning": {
+            "mean_task_count": 2.1,
+            "mean_covered_area": 78.6,
+            "mean_duration": 0.28,
+            "mean_power_consumption": 0.05,
+            "mean_water_consumption": 0
+        }
+    },
+    "shop_4": {
+        "errors": [],
+        "cleaning": {
+            "mean_task_count": 3.2,
+            "mean_covered_area": 110.3,
+            "mean_duration": 0.38,
+            "mean_power_consumption": 0.07,
+            "mean_water_consumption": 0
+        }
+    }
+}
