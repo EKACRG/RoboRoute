@@ -39,7 +39,7 @@ function App() {
       
       <div className="p-[50px]">
         <GridLayout
-          bigSquare={<div>Map</div>}
+          bigSquare={<div><MapPaths /></div>}
           small1={<ErrorsPanel shopId={selectedShop} />}
           small2={<CleaningStats shopId={selectedShop} />}
           small3={<div>Other Stats</div>}
