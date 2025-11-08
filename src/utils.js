@@ -22,3 +22,33 @@ export function generateRectanglePoints(width, height, offsetX, offsetY, rotatio
 
   return points;
 }
+
+// Genera un percorso random ma “smooth” all’interno dei bounds specificati
+export function generateRobotPath(bounds, numPoints = 20, step = 40) {
+  const points = [];
+
+  let x = bounds.x + Math.random() * bounds.width;
+  let y = bounds.y + Math.random() * bounds.height;
+
+  points.push(x, y);
+
+  for (let i = 1; i < numPoints; i++) {
+    // direzione random con variazione dolce
+    const angle = Math.random() * Math.PI * 2;
+    const dx = Math.cos(angle) * step;
+    const dy = Math.sin(angle) * step;
+
+    x += dx;
+    y += dy;
+
+    // resta dentro i bounds
+    if (x < bounds.x) x = bounds.x;
+    if (x > bounds.x + bounds.width) x = bounds.x + bounds.width;
+    if (y < bounds.y) y = bounds.y;
+    if (y > bounds.y + bounds.height) y = bounds.y + bounds.height;
+
+    points.push(x, y);
+  }
+
+  return points;
+}
