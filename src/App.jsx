@@ -1,6 +1,8 @@
 import './styles.css';
 
 import { useState, useMemo } from 'react';
+import GridLayout from './components/GridLayout';
+import Navbar from './components/Navbar';
 import Dates from './components/Dates';
 import MapPaths from './components/MapPaths';
 
@@ -8,16 +10,12 @@ function App() {
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState("");
 
-  // vincolo end >= start via attributi min/max
   const startMax = useMemo(() => (endDate || undefined), [endDate]);
   const endMin = useMemo(() => (startDate || undefined), [startDate]);
 
-  // esempio di processing: qui puoi consumare i due valori
-  // useEffect(() => { ... }, [startDate, endDate])
-
   return (
     <>
-      <div className="flex flex-wrap items-center gap-4 md:flex-row p-2">
+      <div className="flex flex-wrap items-center gap-4 md:flex-row p-[50px] pb-[0px]">
         <Dates
           label="Start date"
           name="start-date"
@@ -33,14 +31,17 @@ function App() {
           min={endMin}
         />
       </div>
-
-      {/* Anteprima valori selezionati (facoltativa) */}
-      <div className="p-2 text-sm text-muted-foreground">
-        <div>Start: {startDate || '—'}</div>
-        <div>End: {endDate || '—'}</div>
+      
+      <div className="p-[50px]">
+        <GridLayout
+          bigSquare={<div>Map</div>}
+          small1={<div>Errors</div>}
+          small2={<div>Cleaning Stats</div>}
+          small3={<div>Other Stats</div>}
+          rect2x1={<div>Other Stats</div>}
+          tileClassName="bg-accent/40"
+        />
       </div>
-
-      <MapPaths />
     </>
   );
 }

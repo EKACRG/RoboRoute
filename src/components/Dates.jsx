@@ -1,5 +1,3 @@
-// Componente singolo input data utilizzabile per start o end.
-// Valore nel formato ISO: yyyy-mm-dd (visualizzazione: "yyyy-mm-gg").
 function Dates({
   id,
   name,
@@ -12,7 +10,7 @@ function Dates({
   const inputId = id || name || "date-input";
 
   const handleChange = (e) => {
-    const v = e.target.value; // yyyy-mm-dd
+    const v = e.target.value;
     onChange?.(v);
   };
 
