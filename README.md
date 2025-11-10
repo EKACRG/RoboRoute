@@ -1,6 +1,7 @@
 # RoboRoute
 
-Telmekom Robotics' Challenge for NOI SFSCON 2025 Hackathon
+Telmekom Robotics' Challenge for NOI SFSCON 2025 Hackathon.
+RoboRoute enhances Telmekom's robot route optimization and diagnostics, providing insights into how robots collaborate and operate across mapped environments.
 
 ### Install dependencies
 
